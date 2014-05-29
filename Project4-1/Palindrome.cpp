@@ -50,5 +50,9 @@ void Palindrome::clear()
 
 void Palindrome::print()
 {
-	cout << "\nLongest palindrome is: " << longest_palindrome << "\nat " << longest_palindrome.length() << " characters.\n";
+	if(longest_palindrome.length() > 0)
+		cout << "\nLongest palindrome is: " << longest_palindrome << "\nat " << longest_palindrome.length() << " characters.\n";
+	else
+		cout << "\nEmpty File\n";
+		
 }

@@ -26,8 +26,8 @@ there should be very few errors, preferrably none
 
 #include "Palindrome.h"
 #include<string>
-#include<iostream>
-#include<iomanip>
+//#include<iostream>
+//#include<iomanip>
 #include<fstream>
 const string YES = "y", NO = "n";
 
