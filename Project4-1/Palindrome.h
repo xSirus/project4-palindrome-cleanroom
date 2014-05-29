@@ -10,27 +10,30 @@ const int ARRAY_SIZE = 1000;
 class Palindrome
 {
 private:
-	int upper, lower, len;//i will increment and decrement these and compare the data as i go
-	int counter;//to keep track of the line number being read in
-	string data_from_file;
-	string longest_palindrome, filename, myString;
+	int upper, lower;//i will increment and decrement these and compare the data as i go
+	string data_from_file, temp;
+	string longest_palindrome;
 	ifstream myStream;
 public:
 	//default constructor
+	//initializes the data in the object
 	Palindrome();
 
 	//destructor
+	//uses the clear function to destroy any data
 	~Palindrome();
 
-	//reads in the file form the console
-	void read();
-
 	//finds the longest palindrome in a sequence of characters
-	void find_palindrome();
+	//goes through each character of a string one by one to find the longest palindrome
+	//parameters: a string is passed in containing the whole string that was input
+	//returns: none
+	void find_palindrome(string);
 
+	//clear function
 	//clears the private data
 	void clear();
 
+	//print function
 	//Prints the longest palindrome found
 	void print();
 };
